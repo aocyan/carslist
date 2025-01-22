@@ -7,6 +7,12 @@
     <title>Carslist</title>
 </head>
 <body>
-    出力テスト
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__logo" href="/">
+                Cars List
+            </a>
+        </div>
+    </header>
 </body>
 </html>
