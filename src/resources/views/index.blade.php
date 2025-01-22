@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Carslist</title>
-</head>
+@extends('layouts.app')
+    @section('css')
+        <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    @endsection
 
-<body>
-    <header class="header">
-        <div class="header__inner">
-            <div class="header-utilities">
-                <a class="header__logo" href="/">
-                    Cars List
-                </a>
-                <nav>
-                    <ul class="header-nav">
-                        <li class="header-nav__item">
-                            <a class="header-nav__link" href="/carlist">車名一覧</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
+    @section('content')
         <div class="cars__alert">
             <div class="cars__alert--danger">
-                車名を入力してください
+                車を追加するか、車種を検索してください
             </div>
         </div>
 
@@ -59,13 +38,11 @@
                 <div class="search-form__item">
                     <select class="search-form__item-select">
                         <option value="">車種</option>
-                    </select">
+                    </select>
                 </div>
                 <div class="search-form__button">
                     <button class="search-form__button-submit" type="submit">検索</button>
                 </div>
             </form>
         </div>
-    </main>
-</body>
-</html>
+    @endsection
