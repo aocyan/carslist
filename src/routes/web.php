@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', [CarsController::class, 'index']);
+Route::get('/confirm', [CarsController::class,'confirm']);
