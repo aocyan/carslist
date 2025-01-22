@@ -22,7 +22,7 @@
                             <th>車種入力</th>
                         </tr>
                         <tr>
-                            <td><input class="create-form__item-input" type="text" name="content"></td>
+                            <td><input class="create-form__item-input" type="text" name="carname"></td>
                             <td><input class="create-form__item-input" type="text" name="makes"></td>
                         </tr>
                     </table>
